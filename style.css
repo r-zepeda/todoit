@@ -1,0 +1,117 @@
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nippo", sans-serif;
+}
+
+body {
+  background-image: url("./public/todoit_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.todo-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: 1rem;
+  flex: 0.5;
+}
+
+.todoBody {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 25rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.clear-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.todo-main {
+  padding: 1.8rem;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+
+.clear-container button {
+  background-color: beige;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.25rem;
+  padding-inline: 0.5rem;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.clear-container button:hover {
+  opacity: 1;
+  scale: 1.05;
+}
+
+input[type="checkbox"] {
+  background-color: pink;
+}
+
+#todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #fff;
+  outline: none;
+  width: 90%;
+  padding: 0.25rem;
+  padding-inline: 0.5rem;
+  border-radius: 20px;
+}
+
+input[type="text"]:hover {
+  outline: 1px solid rgba(255, 255, 255, 1);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Desired color for the placeholder text */
+}
+
+.add-btn {
+  display: none;
+}

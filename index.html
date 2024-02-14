@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=nippo@200,300,500,700,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script.js" defer></script>
+    <script type="module" src="/main.js"></script>
+    <title>TodoIt</title>
+  </head>
+  <body>
+    <section class="todoBody">
+      <div class="todo-header">
+        <h2>TO DO LIST</h2>
+      </div>
+      <div class="todo-main">
+        <ul id="todoList"></ul>
+        <form id="todoForm">
+          <input
+            type="text"
+            id="todoInput"
+            placeholder="what to do?"
+            autocomplete="off"
+          />
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+      </div>
+
+      <div class="clear-container">
+        <button onclick="deleteTasks()">Clear All</button>
+        <!-- <button onclick="displayTasks()">Display</button> -->
+      </div>
+    </section>
+  </body>
+</html>
